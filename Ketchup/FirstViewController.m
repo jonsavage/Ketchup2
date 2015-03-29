@@ -9,16 +9,22 @@
 #import "FirstViewController.h"
 #import <ParseUI/ParseUI.h>
 #import <Parse/Parse.h>
+#import "AppDelegate.h"
 
 @interface FirstViewController ()
 @property (strong, nonatomic) IBOutlet UITextField *textField;
-
+@property (strong, nonatomic) NSString *classId;
 @end
 
 @implementation FirstViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.classId = [(AppDelegate *)[[UIApplication sharedApplication] delegate] classId];
+    
+    NSLog(@"In class: ");
+    NSLog(self.classId);
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -121,24 +127,24 @@
 //    NSLog(@"User dismissed the signUpViewController");
 //}
 //
-//- (IBAction)submitButton:(id)sender {
-//    
-//    PFObject *question = [PFObject objectWithClassName:@"Feed"];
-//    PFUser *currentUser = [PFUser currentUser];
-//    
-//    //question[@"userId"] = currentUser.username;
-//    
-//    question[@"question"] = self.textField.text;
-//    
-//
-//    [question saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-//        if (succeeded) {
-//            NSLog(@"question uploaded");
-//        } else {
-//            NSLog(@"%@", error);
-//        }
-//    }];
-//}
+- (IBAction)submitButton:(id)sender {
+    
+    PFObject *question = [PFObject objectWithClassName:@"Feed"];
+    PFUser *currentUser = [PFUser currentUser];
+    
+    //question[@"userId"] = currentUser.username;
+    
+    question[@"question"] = self.textField.text;
+    question[@"classId"] = self.classId;
+
+    [question saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        if (succeeded) {
+            NSLog(@"question uploaded");
+        } else {
+            NSLog(@"%@", error);
+        }
+    }];
+}
 
 
 
