@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB57C58E1AC77F5C002BE435 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB57C5891AC77F5C002BE435 /* Bolts.framework */; };
+		EB57C58F1AC77F5C002BE435 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB57C58A1AC77F5C002BE435 /* Parse.framework */; };
+		EB57C5901AC77F5C002BE435 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB57C58B1AC77F5C002BE435 /* ParseCrashReporting.framework */; };
+		EB57C5911AC77F5C002BE435 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB57C58C1AC77F5C002BE435 /* ParseFacebookUtils.framework */; };
+		EB57C5921AC77F5C002BE435 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB57C58D1AC77F5C002BE435 /* ParseUI.framework */; };
+		EBDF10DD18E6104C0083F7F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EBDF10DC18E6104C0083F7F3 /* main.m */; };
+		EBDF10E018E6104C0083F7F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBDF10DF18E6104C0083F7F3 /* AppDelegate.m */; };
+		EBDF10E318E6104C0083F7F3 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBDF10E218E6104C0083F7F3 /* FirstViewController.m */; };
+		EBDF10E618E6104C0083F7F3 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBDF10E518E6104C0083F7F3 /* SecondViewController.m */; };
+		EBDF10E918E6104C0083F7F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBDF10E718E6104C0083F7F3 /* Main.storyboard */; };
+		EBDF10EB18E6104C0083F7F3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBDF10EA18E6104C0083F7F3 /* Images.xcassets */; };
+		EBDF10EE18E6104C0083F7F3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBDF10EC18E6104C0083F7F3 /* LaunchScreen.xib */; };
+		EBDF10FA18E6104C0083F7F3 /* KetchupTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBDF10F918E6104C0083F7F3 /* KetchupTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EBDF10F418E6104C0083F7F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBDF10CF18E6104C0083F7F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBDF10D618E6104C0083F7F3;
+			remoteInfo = Ketchup;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EB57C5891AC77F5C002BE435 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../Library/parse-library-1.6.3/Bolts.framework"; sourceTree = "<group>"; };
+		EB57C58A1AC77F5C002BE435 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../Library/parse-library-1.6.3/Parse.framework"; sourceTree = "<group>"; };
+		EB57C58B1AC77F5C002BE435 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseCrashReporting.framework; path = "../../Library/parse-library-1.6.3/ParseCrashReporting.framework"; sourceTree = "<group>"; };
+		EB57C58C1AC77F5C002BE435 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtils.framework; path = "../../Library/parse-library-1.6.3/ParseFacebookUtils.framework"; sourceTree = "<group>"; };
+		EB57C58D1AC77F5C002BE435 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = "../../Library/parse-library-1.6.3/ParseUI.framework"; sourceTree = "<group>"; };
+		EBDF10D718E6104C0083F7F3 /* Ketchup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ketchup.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBDF10DB18E6104C0083F7F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBDF10DC18E6104C0083F7F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EBDF10DE18E6104C0083F7F3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EBDF10DF18E6104C0083F7F3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EBDF10E118E6104C0083F7F3 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		EBDF10E218E6104C0083F7F3 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		EBDF10E418E6104C0083F7F3 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		EBDF10E518E6104C0083F7F3 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		EBDF10E818E6104C0083F7F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EBDF10EA18E6104C0083F7F3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EBDF10ED18E6104C0083F7F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		EBDF10F318E6104C0083F7F3 /* KetchupTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KetchupTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBDF10F818E6104C0083F7F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBDF10F918E6104C0083F7F3 /* KetchupTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KetchupTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EBDF10D418E6104C0083F7F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB57C58F1AC77F5C002BE435 /* Parse.framework in Frameworks */,
+				EB57C5901AC77F5C002BE435 /* ParseCrashReporting.framework in Frameworks */,
+				EB57C5921AC77F5C002BE435 /* ParseUI.framework in Frameworks */,
+				EB57C5911AC77F5C002BE435 /* ParseFacebookUtils.framework in Frameworks */,
+				EB57C58E1AC77F5C002BE435 /* Bolts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBDF10F018E6104C0083F7F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EBDF10CE18E6104C0083F7F3 = {
+			isa = PBXGroup;
+			children = (
+				EBDF10D918E6104C0083F7F3 /* Ketchup */,
+				EBDF10F618E6104C0083F7F3 /* KetchupTests */,
+				EBDF10D818E6104C0083F7F3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EBDF10D818E6104C0083F7F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBDF10D718E6104C0083F7F3 /* Ketchup.app */,
+				EBDF10F318E6104C0083F7F3 /* KetchupTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBDF10D918E6104C0083F7F3 /* Ketchup */ = {
+			isa = PBXGroup;
+			children = (
+				EBDF10DE18E6104C0083F7F3 /* AppDelegate.h */,
+				EBDF10DF18E6104C0083F7F3 /* AppDelegate.m */,
+				EBDF10E118E6104C0083F7F3 /* FirstViewController.h */,
+				EBDF10E218E6104C0083F7F3 /* FirstViewController.m */,
+				EBDF10E418E6104C0083F7F3 /* SecondViewController.h */,
+				EBDF10E518E6104C0083F7F3 /* SecondViewController.m */,
+				EBDF10E718E6104C0083F7F3 /* Main.storyboard */,
+				EBDF10EA18E6104C0083F7F3 /* Images.xcassets */,
+				EBDF10EC18E6104C0083F7F3 /* LaunchScreen.xib */,
+				EBDF10DA18E6104C0083F7F3 /* Supporting Files */,
+			);
+			path = Ketchup;
+			sourceTree = "<group>";
+		};
+		EBDF10DA18E6104C0083F7F3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB57C5891AC77F5C002BE435 /* Bolts.framework */,
+				EB57C58A1AC77F5C002BE435 /* Parse.framework */,
+				EB57C58B1AC77F5C002BE435 /* ParseCrashReporting.framework */,
+				EB57C58C1AC77F5C002BE435 /* ParseFacebookUtils.framework */,
+				EB57C58D1AC77F5C002BE435 /* ParseUI.framework */,
+				EBDF10DB18E6104C0083F7F3 /* Info.plist */,
+				EBDF10DC18E6104C0083F7F3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EBDF10F618E6104C0083F7F3 /* KetchupTests */ = {
+			isa = PBXGroup;
+			children = (
+				EBDF10F918E6104C0083F7F3 /* KetchupTests.m */,
+				EBDF10F718E6104C0083F7F3 /* Supporting Files */,
+			);
+			path = KetchupTests;
+			sourceTree = "<group>";
+		};
+		EBDF10F718E6104C0083F7F3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EBDF10F818E6104C0083F7F3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EBDF10D618E6104C0083F7F3 /* Ketchup */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBDF10FD18E6104C0083F7F3 /* Build configuration list for PBXNativeTarget "Ketchup" */;
+			buildPhases = (
+				EBDF10D318E6104C0083F7F3 /* Sources */,
+				EBDF10D418E6104C0083F7F3 /* Frameworks */,
+				EBDF10D518E6104C0083F7F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ketchup;
+			productName = Ketchup;
+			productReference = EBDF10D718E6104C0083F7F3 /* Ketchup.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EBDF10F218E6104C0083F7F3 /* KetchupTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBDF110018E6104C0083F7F3 /* Build configuration list for PBXNativeTarget "KetchupTests" */;
+			buildPhases = (
+				EBDF10EF18E6104C0083F7F3 /* Sources */,
+				EBDF10F018E6104C0083F7F3 /* Frameworks */,
+				EBDF10F118E6104C0083F7F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBDF10F518E6104C0083F7F3 /* PBXTargetDependency */,
+			);
+			name = KetchupTests;
+			productName = KetchupTests;
+			productReference = EBDF10F318E6104C0083F7F3 /* KetchupTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EBDF10CF18E6104C0083F7F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Jon Savage";
+				TargetAttributes = {
+					EBDF10D618E6104C0083F7F3 = {
+						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = 694SYWSB62;
+					};
+					EBDF10F218E6104C0083F7F3 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = EBDF10D618E6104C0083F7F3;
+					};
+				};
+			};
+			buildConfigurationList = EBDF10D218E6104C0083F7F3 /* Build configuration list for PBXProject "Ketchup" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EBDF10CE18E6104C0083F7F3;
+			productRefGroup = EBDF10D818E6104C0083F7F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBDF10D618E6104C0083F7F3 /* Ketchup */,
+				EBDF10F218E6104C0083F7F3 /* KetchupTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EBDF10D518E6104C0083F7F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBDF10E918E6104C0083F7F3 /* Main.storyboard in Resources */,
+				EBDF10EE18E6104C0083F7F3 /* LaunchScreen.xib in Resources */,
+				EBDF10EB18E6104C0083F7F3 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBDF10F118E6104C0083F7F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EBDF10D318E6104C0083F7F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBDF10E618E6104C0083F7F3 /* SecondViewController.m in Sources */,
+				EBDF10E018E6104C0083F7F3 /* AppDelegate.m in Sources */,
+				EBDF10E318E6104C0083F7F3 /* FirstViewController.m in Sources */,
+				EBDF10DD18E6104C0083F7F3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBDF10EF18E6104C0083F7F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBDF10FA18E6104C0083F7F3 /* KetchupTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EBDF10F518E6104C0083F7F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBDF10D618E6104C0083F7F3 /* Ketchup */;
+			targetProxy = EBDF10F418E6104C0083F7F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EBDF10E718E6104C0083F7F3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBDF10E818E6104C0083F7F3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EBDF10EC18E6104C0083F7F3 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBDF10ED18E6104C0083F7F3 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EBDF10FB18E6104C0083F7F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EBDF10FC18E6104C0083F7F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EBDF10FE18E6104C0083F7F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/jonsavage/Documents/xCodeProjects/Library/parse-library-1.6.3",
+				);
+				INFOPLIST_FILE = Ketchup/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EBDF10FF18E6104C0083F7F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/jonsavage/Documents/xCodeProjects/Library/parse-library-1.6.3",
+				);
+				INFOPLIST_FILE = Ketchup/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EBDF110118E6104C0083F7F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KetchupTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ketchup.app/Ketchup";
+			};
+			name = Debug;
+		};
+		EBDF110218E6104C0083F7F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KetchupTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ketchup.app/Ketchup";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EBDF10D218E6104C0083F7F3 /* Build configuration list for PBXProject "Ketchup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBDF10FB18E6104C0083F7F3 /* Debug */,
+				EBDF10FC18E6104C0083F7F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBDF10FD18E6104C0083F7F3 /* Build configuration list for PBXNativeTarget "Ketchup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBDF10FE18E6104C0083F7F3 /* Debug */,
+				EBDF10FF18E6104C0083F7F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBDF110018E6104C0083F7F3 /* Build configuration list for PBXNativeTarget "KetchupTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBDF110118E6104C0083F7F3 /* Debug */,
+				EBDF110218E6104C0083F7F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EBDF10CF18E6104C0083F7F3 /* Project object */;
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>91108973-28F2-46C1-A1A7-6EA78BF87230</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Ketchup</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>85D428470F6DC3E3B8FBCFB0773919785AB321A5</key>
+		<string>https://github.com/jsavage06/Ketchup.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Ketchup.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>85D428470F6DC3E3B8FBCFB0773919785AB321A5</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/jsavage06/Ketchup.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>85D428470F6DC3E3B8FBCFB0773919785AB321A5</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>85D428470F6DC3E3B8FBCFB0773919785AB321A5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Ketchup</string>
+		</dict>
+	</array>
+</dict>
+</plist>
