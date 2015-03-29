@@ -10,14 +10,14 @@
 	<string>Ketchup</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>85D428470F6DC3E3B8FBCFB0773919785AB321A5</key>
+		<key>AF4A5028994BF03987E6CC61C4525EA56B8A7B0D</key>
 		<string>https://github.com/jsavage06/Ketchup.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Ketchup.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>85D428470F6DC3E3B8FBCFB0773919785AB321A5</key>
+		<key>AF4A5028994BF03987E6CC61C4525EA56B8A7B0D</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>85D428470F6DC3E3B8FBCFB0773919785AB321A5</string>
+	<string>AF4A5028994BF03987E6CC61C4525EA56B8A7B0D</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>85D428470F6DC3E3B8FBCFB0773919785AB321A5</string>
+			<string>AF4A5028994BF03987E6CC61C4525EA56B8A7B0D</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Ketchup</string>
 		</dict>
