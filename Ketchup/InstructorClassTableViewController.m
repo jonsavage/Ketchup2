@@ -71,6 +71,7 @@
     
     [query selectKeys:@[@"classId"]];
     
+    
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         
         if(error == nil) { // Get our shit yo!

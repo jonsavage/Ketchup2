@@ -139,7 +139,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="L9h-ag-aeS" kind="show" id="sZv-sp-phM"/>
+                                    <segue destination="L9h-ag-aeS" kind="show" identifier="studentSegue" id="sZv-sp-phM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IkC-lF-Q19">
@@ -172,7 +172,7 @@
         <!--Instructor Class Feed-->
         <scene sceneID="tHd-N0-bkF">
             <objects>
-                <tableViewController id="Quq-ac-6cG" customClass="FeedTableViewController" sceneMemberID="viewController">
+                <tableViewController id="Quq-ac-6cG" customClass="InstructorFeedTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="2Bl-uM-VmM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -10,6 +10,7 @@
 #import <Parse/Parse.h>
 #import <ParseUI/ParseUI.h>
 #import "AppDelegate.h"
+#import <AudioToolbox/AudioToolbox.h>
 
 @interface InstructorFeedTableViewController()
 
@@ -35,6 +36,16 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    NSTimer *t = [NSTimer scheduledTimerWithTimeInterval: 2.0
+                                                  target: self
+                                                selector:@selector(timerFireMethod:)
+                                                userInfo: nil repeats:YES];
+}
+
+- (void)timerFireMethod:(NSTimer *)timer {
+    NSLog(@"ytimer fire**********************");
+    [self reloadTable];
 }
 
 -(void)reloadTable {
@@ -44,6 +55,7 @@
     
     //    [query whereKey:@"classId" equalTo:@"mobiledev"];
     [query whereKey:@"classId" equalTo:[self.appDelegate classId]];
+    [query orderByDescending:@"createdAt"];
     
     NSString *a =  [self.appDelegate classId];
     
@@ -53,7 +65,12 @@
         if(error == nil) { // Get our shit yo!
             NSLog(@"got data successfully");
             
-            self.questions = objects;
+            if(self.questions.count != objects.count) {
+                self.questions = objects;
+                AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+                
+            }
+            
             
         } else { NSLog(@"error getting questions"); }
         

@@ -9,6 +9,7 @@
 #import "InitialViewController.h"
 #import <Parse/Parse.h>
 #import <ParseUI/ParseUI.h>
+#import <AudioToolbox/AudioToolbox.h>
 
 @interface InitialViewController ()
 @property (strong, nonatomic) IBOutlet UIButton *instructorButton;
@@ -60,11 +61,17 @@
 // Sent to the delegate when a PFUser is logged in.
 - (void)logInViewController:(PFLogInViewController *)logInController didLogInUser:(PFUser *)user {
     
+    BOOL a = [PFUser currentUser][@"isInstructor"];
+    
+    
     if([PFUser currentUser][@"isInstructor"] == nil) {
         NSLog(@" NOT INSTRUCTOR");
         self.instructorButton.hidden = true;
+        [self performSegueWithIdentifier: @"studentSegue" sender:self];
     }
-    else { self.instructorButton.hidden = false; }
+    else {
+        self.instructorButton.hidden = false;
+    }
     
     [self dismissViewControllerAnimated:YES completion:NULL];
     
@@ -158,6 +165,27 @@
     [PFUser logOut];
     
     [self login];
+}
+- (IBAction)notificationButton:(id)sender {
+    
+    UILocalNotification* localNotification = [[UILocalNotification alloc] init];
+    localNotification.fireDate = [NSDate dateWithTimeIntervalSinceNow:5];
+    localNotification.alertBody = @"Yo!!!!!!!!";
+    localNotification.timeZone = [NSTimeZone defaultTimeZone];
+    [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
+    
+    AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+    
+//    // Schedule the notification
+//    UILocalNotification* localNotification = [[UILocalNotification alloc] init];
+//    localNotification.fireDate = [NSDate [NSDA ]]
+//    localNotification.alertBody = self.itemText.text;
+//    localNotification.alertAction = @"Show me the item";
+//    localNotification.timeZone = [NSTimeZone defaultTimeZone];
+//    localNotification.applicationIconBadgeNumber = [[UIApplication sharedApplication] applicationIconBadgeNumber] + 1;
+//    
+//    [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
+
 }
 
 /*

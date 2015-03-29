@@ -2,6 +2,7 @@
 # platform :ios, '6.0'
 
 target 'Ketchup' do
+	pod 'PebbleKit'
 
 end
 
