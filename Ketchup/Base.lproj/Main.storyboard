@@ -121,6 +121,81 @@
             </objects>
             <point key="canvasLocation" x="186" y="-691"/>
         </scene>
+        <!--Initial View Controller-->
+        <scene sceneID="fOE-Nm-Oo1">
+            <objects>
+                <viewController id="aKv-Zs-xoa" customClass="InitialViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cm9-iN-hqS"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jgq-1o-zI4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XqK-Qm-xho">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fh8-Cz-ekI">
+                                <rect key="frame" x="180" y="149" width="54" height="30"/>
+                                <state key="normal" title="Student">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="L9h-ag-aeS" kind="show" id="sZv-sp-phM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IkC-lF-Q19">
+                                <rect key="frame" x="174" y="327" width="66" height="30"/>
+                                <state key="normal" title="Instructor">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Mio-od-YEx" kind="show" id="hd8-Gl-2rT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eZq-z5-rtB">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="YE1-CP-tYe">
+                            <connections>
+                                <action selector="logoutButtonPushed:" destination="aKv-Zs-xoa" id="MXN-FT-aRw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="instructorButton" destination="IkC-lF-Q19" id="KHx-k8-mzR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="goQ-cZ-eVz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1560" y="-402"/>
+        </scene>
+        <!--Instructor Class Feed-->
+        <scene sceneID="tHd-N0-bkF">
+            <objects>
+                <tableViewController id="Quq-ac-6cG" customClass="FeedTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="2Bl-uM-VmM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="cell" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="zre-Dc-Eub">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zre-Dc-Eub" id="mlD-Bm-gdh">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Quq-ac-6cG" id="nMb-g1-BBj"/>
+                            <outlet property="delegate" destination="Quq-ac-6cG" id="b0s-dY-8DF"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Instructor Class Feed" id="Xwg-fV-Blb"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CrF-aK-E4U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-908" y="471"/>
+        </scene>
         <!--Classes-->
         <scene sceneID="w4P-pc-joB">
             <objects>
@@ -142,13 +217,7 @@
                             <outlet property="delegate" destination="L9h-ag-aeS" id="Fe7-e1-Z8V"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Classes" id="Rwd-SH-RNk">
-                        <barButtonItem key="leftBarButtonItem" title="Logout" id="zxd-kd-m1p">
-                            <connections>
-                                <action selector="logoutButtonTapped:" destination="L9h-ag-aeS" id="BwI-OP-Ihe"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Classes" id="Rwd-SH-RNk"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <segue destination="49e-Tb-3d3" kind="show" identifier="classChosen" id="ce2-HG-oC8"/>
@@ -171,12 +240,43 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="L9h-ag-aeS" kind="relationship" relationship="rootViewController" id="ey5-M5-5wA"/>
+                        <segue destination="aKv-Zs-xoa" kind="relationship" relationship="rootViewController" id="YYw-3r-CDT"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PrO-Pa-va7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1464" y="-402"/>
+            <point key="canvasLocation" x="-2176" y="-402"/>
+        </scene>
+        <!--Instructor Class Picker-->
+        <scene sceneID="2bj-av-YdV">
+            <objects>
+                <tableViewController title="Instructor Class Picker" id="Mio-od-YEx" customClass="InstructorClassTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="LdM-db-P3V">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="3u0-CE-yGe">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3u0-CE-yGe" id="dMQ-tS-1Ff">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Mio-od-YEx" id="UeG-02-qso"/>
+                            <outlet property="delegate" destination="Mio-od-YEx" id="RFr-5E-qmo"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Classes" id="Iz5-h1-MMU"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <segue destination="Quq-ac-6cG" kind="show" identifier="InstructorChoseClass" id="PTH-aU-82O"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WX0-z1-gaK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1560" y="471"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.21271418112819385" green="0.23437025426507396" blue="1" alpha="1" colorSpace="calibratedRGB"/>

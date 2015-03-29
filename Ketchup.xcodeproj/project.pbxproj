@@ -34,6 +34,9 @@
 		EBDF10FA18E6104C0083F7F3 /* KetchupTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBDF10F918E6104C0083F7F3 /* KetchupTests.m */; };
 		EBEE17CB1AC7A35D00A6D172 /* FeedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBEE17CA1AC7A35D00A6D172 /* FeedTableViewController.m */; };
 		EBEE17CE1AC7BB5400A6D172 /* ClassTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBEE17CD1AC7BB5400A6D172 /* ClassTableViewController.m */; };
+		EBEE17D11AC7E0B500A6D172 /* InstructorClassTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBEE17D01AC7E0B500A6D172 /* InstructorClassTableViewController.m */; };
+		EBEE17D41AC7E19F00A6D172 /* InstructorFeedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBEE17D31AC7E19F00A6D172 /* InstructorFeedTableViewController.m */; };
+		EBEE17D71AC7EB4900A6D172 /* InitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBEE17D61AC7EB4900A6D172 /* InitialViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +86,12 @@
 		EBEE17CA1AC7A35D00A6D172 /* FeedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedTableViewController.m; sourceTree = "<group>"; };
 		EBEE17CC1AC7BB5400A6D172 /* ClassTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassTableViewController.h; sourceTree = "<group>"; };
 		EBEE17CD1AC7BB5400A6D172 /* ClassTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassTableViewController.m; sourceTree = "<group>"; };
+		EBEE17CF1AC7E0B500A6D172 /* InstructorClassTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstructorClassTableViewController.h; sourceTree = "<group>"; };
+		EBEE17D01AC7E0B500A6D172 /* InstructorClassTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstructorClassTableViewController.m; sourceTree = "<group>"; };
+		EBEE17D21AC7E19F00A6D172 /* InstructorFeedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstructorFeedTableViewController.h; sourceTree = "<group>"; };
+		EBEE17D31AC7E19F00A6D172 /* InstructorFeedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstructorFeedTableViewController.m; sourceTree = "<group>"; };
+		EBEE17D51AC7EB4900A6D172 /* InitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitialViewController.h; sourceTree = "<group>"; };
+		EBEE17D61AC7EB4900A6D172 /* InitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitialViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +215,12 @@
 				EBEE17CA1AC7A35D00A6D172 /* FeedTableViewController.m */,
 				EBEE17CC1AC7BB5400A6D172 /* ClassTableViewController.h */,
 				EBEE17CD1AC7BB5400A6D172 /* ClassTableViewController.m */,
+				EBEE17CF1AC7E0B500A6D172 /* InstructorClassTableViewController.h */,
+				EBEE17D01AC7E0B500A6D172 /* InstructorClassTableViewController.m */,
+				EBEE17D21AC7E19F00A6D172 /* InstructorFeedTableViewController.h */,
+				EBEE17D31AC7E19F00A6D172 /* InstructorFeedTableViewController.m */,
+				EBEE17D51AC7EB4900A6D172 /* InitialViewController.h */,
+				EBEE17D61AC7EB4900A6D172 /* InitialViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -323,8 +338,11 @@
 				EBDF10E018E6104C0083F7F3 /* AppDelegate.m in Sources */,
 				EBDF10E318E6104C0083F7F3 /* FirstViewController.m in Sources */,
 				EBDF10DD18E6104C0083F7F3 /* main.m in Sources */,
+				EBEE17D71AC7EB4900A6D172 /* InitialViewController.m in Sources */,
 				EBEE17CB1AC7A35D00A6D172 /* FeedTableViewController.m in Sources */,
 				EBEE17CE1AC7BB5400A6D172 /* ClassTableViewController.m in Sources */,
+				EBEE17D41AC7E19F00A6D172 /* InstructorFeedTableViewController.m in Sources */,
+				EBEE17D11AC7E0B500A6D172 /* InstructorClassTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
