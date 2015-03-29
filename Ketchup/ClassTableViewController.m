@@ -1,32 +1,34 @@
 //
-//  UITableViewController.m
+//  ClassTableViewController.m
 //  Ketchup
 //
-//  Created by Jon Savage on 3/28/15.
+//  Created by Jon Savage on 3/29/15.
 //  Copyright (c) 2015 Jon Savage. All rights reserved.
 //
 
-#import "FeedTableViewController.h"
-#import <Parse/Parse.h>
-#import <ParseUI/ParseUI.h>
+#import "ClassTableViewController.h"
 #import "AppDelegate.h"
+#import <ParseUI/ParseUI.h>
+#import <Parse/Parse.h>
 
-@interface FeedTableViewController ()
+@interface ClassTableViewController ()
 
-@property (strong, nonatomic) NSMutableArray *questions;
+@property (strong, nonatomic) NSMutableArray *classes;
 
 @property (strong, nonatomic) AppDelegate *appDelegate;
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
-@implementation FeedTableViewController
+@implementation ClassTableViewController
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     self.appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    self.questions = [[NSMutableArray alloc] init];
+    
+    self.classes = [[NSMutableArray alloc] init];
     
     [self reloadTable];
     
@@ -42,18 +44,21 @@
     PFQuery *query = [PFQuery queryWithClassName:@"Feed"];
     
     
-//    [query whereKey:@"classId" equalTo:@"mobiledev"];
-    [query whereKey:@"classId" equalTo:[self.appDelegate classId]];
+    //[query whereKey:@"classId" equalTo:[self.appDelegate classId]];
     
-    NSString *a =  [self.appDelegate classId];
-    
-    //[query selectKeys:@[@"classId"]];
+    [query selectKeys:@[@"classId"]];
     
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        
         if(error == nil) { // Get our shit yo!
             NSLog(@"got data successfully");
             
-            self.questions = objects;
+            for(PFObject *i in objects) {
+                
+                if(![self.classes containsObject: i[@"classId"]]) {
+                    [self.classes addObject:i[@"classId"]];
+                }
+            }
             
         } else { NSLog(@"error getting questions"); }
         
@@ -63,9 +68,7 @@
 
 
 -(void)viewDidAppear:(BOOL)animated {
-    if(self.appDelegate != nil) {
-        [self reloadTable];
-    }
+    [self reloadTable];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -83,7 +86,7 @@
 // Return number of rows in section. This will be the number of questions in the feed.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     //NSLog(@"%d",self.questions.count);
-    return self.questions.count;
+    return self.classes.count;
 }
 
 
@@ -91,17 +94,34 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     
-    
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
     
-    cell.textLabel.text = [self.questions objectAtIndex:indexPath.row][@"question"];
-    NSLog(@"Cell: ");
+    cell.textLabel.text = [self.classes objectAtIndex:indexPath.row];
     NSLog(cell.textLabel.text);
     
     return cell;
 }
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UIAlertView *messageAlert = [[UIAlertView alloc] initWithTitle:@"Row Selected" message:@"You've selected a row" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    
+    self.appDelegate.classId = [self.tableView cellForRowAtIndexPath:indexPath].textLabel.text;
+    
+    
+    [self performSegueWithIdentifier: @"classChosen" sender:self];
+    
+    // Display Alert Message
+//    [messageAlert show];
+    
+}
+
+
+
+
 
 /*
  // Override to support conditional editing of the table view.
