@@ -158,7 +158,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Classes" id="Rwd-SH-RNk">
-                        <barButtonItem key="leftBarButtonItem" title="Logout" id="zxd-kd-m1p"/>
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="zxd-kd-m1p">
+                            <connections>
+                                <action selector="logoutButtonTapped:" destination="L9h-ag-aeS" id="BwI-OP-Ihe"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
