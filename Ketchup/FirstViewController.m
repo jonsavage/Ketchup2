@@ -11,6 +11,7 @@
 #import <Parse/Parse.h>
 
 @interface FirstViewController ()
+@property (strong, nonatomic) IBOutlet UITextField *textField;
 
 @end
 
@@ -118,6 +119,25 @@
 // Sent to the delegate when the sign up screen is dismissed.
 - (void)signUpViewControllerDidCancelSignUp:(PFSignUpViewController *)signUpController {
     NSLog(@"User dismissed the signUpViewController");
+}
+
+- (IBAction)submitButton:(id)sender {
+    
+    PFObject *question = [PFObject objectWithClassName:@"Feed"];
+    PFUser *currentUser = [PFUser currentUser];
+    
+    //question[@"userId"] = currentUser.username;
+    
+    question[@"question"] = self.textField.text;
+    
+
+    [question saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        if (succeeded) {
+            NSLog(@"question uploaded");
+        } else {
+            NSLog(@"%@", error);
+        }
+    }];
 }
 
 

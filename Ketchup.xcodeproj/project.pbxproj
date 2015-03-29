@@ -28,11 +28,11 @@
 		EBDF10DD18E6104C0083F7F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EBDF10DC18E6104C0083F7F3 /* main.m */; };
 		EBDF10E018E6104C0083F7F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBDF10DF18E6104C0083F7F3 /* AppDelegate.m */; };
 		EBDF10E318E6104C0083F7F3 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBDF10E218E6104C0083F7F3 /* FirstViewController.m */; };
-		EBDF10E618E6104C0083F7F3 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBDF10E518E6104C0083F7F3 /* SecondViewController.m */; };
 		EBDF10E918E6104C0083F7F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBDF10E718E6104C0083F7F3 /* Main.storyboard */; };
 		EBDF10EB18E6104C0083F7F3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBDF10EA18E6104C0083F7F3 /* Images.xcassets */; };
 		EBDF10EE18E6104C0083F7F3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBDF10EC18E6104C0083F7F3 /* LaunchScreen.xib */; };
 		EBDF10FA18E6104C0083F7F3 /* KetchupTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBDF10F918E6104C0083F7F3 /* KetchupTests.m */; };
+		EBEE17CB1AC7A35D00A6D172 /* FeedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBEE17CA1AC7A35D00A6D172 /* FeedTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,14 +72,14 @@
 		EBDF10DF18E6104C0083F7F3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		EBDF10E118E6104C0083F7F3 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		EBDF10E218E6104C0083F7F3 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		EBDF10E418E6104C0083F7F3 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		EBDF10E518E6104C0083F7F3 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		EBDF10E818E6104C0083F7F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EBDF10EA18E6104C0083F7F3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EBDF10ED18E6104C0083F7F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		EBDF10F318E6104C0083F7F3 /* KetchupTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KetchupTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBDF10F818E6104C0083F7F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBDF10F918E6104C0083F7F3 /* KetchupTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KetchupTests.m; sourceTree = "<group>"; };
+		EBEE17C91AC7A35D00A6D172 /* FeedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedTableViewController.h; sourceTree = "<group>"; };
+		EBEE17CA1AC7A35D00A6D172 /* FeedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,12 +139,8 @@
 		EBDF10D918E6104C0083F7F3 /* Ketchup */ = {
 			isa = PBXGroup;
 			children = (
-				EBDF10DE18E6104C0083F7F3 /* AppDelegate.h */,
-				EBDF10DF18E6104C0083F7F3 /* AppDelegate.m */,
-				EBDF10E118E6104C0083F7F3 /* FirstViewController.h */,
-				EBDF10E218E6104C0083F7F3 /* FirstViewController.m */,
-				EBDF10E418E6104C0083F7F3 /* SecondViewController.h */,
-				EBDF10E518E6104C0083F7F3 /* SecondViewController.m */,
+				EBEE17C81AC78EEB00A6D172 /* Delegates */,
+				EBEE17C71AC78ECA00A6D172 /* Controllers */,
 				EBDF10E718E6104C0083F7F3 /* Main.storyboard */,
 				EBDF10EA18E6104C0083F7F3 /* Images.xcassets */,
 				EBDF10EC18E6104C0083F7F3 /* LaunchScreen.xib */,
@@ -196,6 +192,26 @@
 				EBDF10F818E6104C0083F7F3 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EBEE17C71AC78ECA00A6D172 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EBDF10E118E6104C0083F7F3 /* FirstViewController.h */,
+				EBDF10E218E6104C0083F7F3 /* FirstViewController.m */,
+				EBEE17C91AC7A35D00A6D172 /* FeedTableViewController.h */,
+				EBEE17CA1AC7A35D00A6D172 /* FeedTableViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		EBEE17C81AC78EEB00A6D172 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				EBDF10DE18E6104C0083F7F3 /* AppDelegate.h */,
+				EBDF10DF18E6104C0083F7F3 /* AppDelegate.m */,
+			);
+			name = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,10 +315,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBDF10E618E6104C0083F7F3 /* SecondViewController.m in Sources */,
 				EBDF10E018E6104C0083F7F3 /* AppDelegate.m in Sources */,
 				EBDF10E318E6104C0083F7F3 /* FirstViewController.m in Sources */,
 				EBDF10DD18E6104C0083F7F3 /* main.m in Sources */,
+				EBEE17CB1AC7A35D00A6D172 /* FeedTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
