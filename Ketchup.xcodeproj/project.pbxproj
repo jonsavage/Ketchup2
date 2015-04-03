@@ -26,18 +26,15 @@
 		EB60821D1AC781A9003BBAF5 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EB60821C1AC781A9003BBAF5 /* libsqlite3.dylib */; };
 		EB60821F1AC781C4003BBAF5 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB60821E1AC781C4003BBAF5 /* Accounts.framework */; };
 		EB6082211AC781CF003BBAF5 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB6082201AC781CF003BBAF5 /* Social.framework */; };
+		EBB3DFA51ACE1F77007BEDAD /* AddQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB3DFA41ACE1F77007BEDAD /* AddQuestionViewController.m */; };
 		EBDF10DD18E6104C0083F7F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EBDF10DC18E6104C0083F7F3 /* main.m */; };
 		EBDF10E018E6104C0083F7F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBDF10DF18E6104C0083F7F3 /* AppDelegate.m */; };
-		EBDF10E318E6104C0083F7F3 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBDF10E218E6104C0083F7F3 /* FirstViewController.m */; };
 		EBDF10E918E6104C0083F7F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBDF10E718E6104C0083F7F3 /* Main.storyboard */; };
 		EBDF10EB18E6104C0083F7F3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBDF10EA18E6104C0083F7F3 /* Images.xcassets */; };
 		EBDF10EE18E6104C0083F7F3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBDF10EC18E6104C0083F7F3 /* LaunchScreen.xib */; };
 		EBDF10FA18E6104C0083F7F3 /* KetchupTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBDF10F918E6104C0083F7F3 /* KetchupTests.m */; };
-		EBEE17CB1AC7A35D00A6D172 /* FeedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBEE17CA1AC7A35D00A6D172 /* FeedTableViewController.m */; };
 		EBEE17CE1AC7BB5400A6D172 /* ClassTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBEE17CD1AC7BB5400A6D172 /* ClassTableViewController.m */; };
-		EBEE17D11AC7E0B500A6D172 /* InstructorClassTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBEE17D01AC7E0B500A6D172 /* InstructorClassTableViewController.m */; };
 		EBEE17D41AC7E19F00A6D172 /* InstructorFeedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBEE17D31AC7E19F00A6D172 /* InstructorFeedTableViewController.m */; };
-		EBEE17D71AC7EB4900A6D172 /* InitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBEE17D61AC7EB4900A6D172 /* InitialViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,29 +69,23 @@
 		EB60821E1AC781C4003BBAF5 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		EB6082201AC781CF003BBAF5 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		EB6082221AC78472003BBAF5 /* PebbleKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PebbleKit.framework; path = ../../Library/pebble/PebbleKit.framework; sourceTree = "<group>"; };
+		EBB3DFA31ACE1F77007BEDAD /* AddQuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddQuestionViewController.h; sourceTree = "<group>"; };
+		EBB3DFA41ACE1F77007BEDAD /* AddQuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddQuestionViewController.m; sourceTree = "<group>"; };
 		EBDF10D718E6104C0083F7F3 /* Ketchup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ketchup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBDF10DB18E6104C0083F7F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBDF10DC18E6104C0083F7F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EBDF10DE18E6104C0083F7F3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EBDF10DF18E6104C0083F7F3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EBDF10E118E6104C0083F7F3 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		EBDF10E218E6104C0083F7F3 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		EBDF10E818E6104C0083F7F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EBDF10EA18E6104C0083F7F3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EBDF10ED18E6104C0083F7F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		EBDF10F318E6104C0083F7F3 /* KetchupTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KetchupTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBDF10F818E6104C0083F7F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBDF10F918E6104C0083F7F3 /* KetchupTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KetchupTests.m; sourceTree = "<group>"; };
-		EBEE17C91AC7A35D00A6D172 /* FeedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedTableViewController.h; sourceTree = "<group>"; };
-		EBEE17CA1AC7A35D00A6D172 /* FeedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedTableViewController.m; sourceTree = "<group>"; };
 		EBEE17CC1AC7BB5400A6D172 /* ClassTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassTableViewController.h; sourceTree = "<group>"; };
 		EBEE17CD1AC7BB5400A6D172 /* ClassTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassTableViewController.m; sourceTree = "<group>"; };
-		EBEE17CF1AC7E0B500A6D172 /* InstructorClassTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstructorClassTableViewController.h; sourceTree = "<group>"; };
-		EBEE17D01AC7E0B500A6D172 /* InstructorClassTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstructorClassTableViewController.m; sourceTree = "<group>"; };
 		EBEE17D21AC7E19F00A6D172 /* InstructorFeedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstructorFeedTableViewController.h; sourceTree = "<group>"; };
 		EBEE17D31AC7E19F00A6D172 /* InstructorFeedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstructorFeedTableViewController.m; sourceTree = "<group>"; };
-		EBEE17D51AC7EB4900A6D172 /* InitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitialViewController.h; sourceTree = "<group>"; };
-		EBEE17D61AC7EB4900A6D172 /* InitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitialViewController.m; sourceTree = "<group>"; };
 		FED98095842430F90DDC2754 /* Pods-Ketchup.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ketchup.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ketchup/Pods-Ketchup.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -233,18 +224,12 @@
 		EBEE17C71AC78ECA00A6D172 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				EBDF10E118E6104C0083F7F3 /* FirstViewController.h */,
-				EBDF10E218E6104C0083F7F3 /* FirstViewController.m */,
-				EBEE17C91AC7A35D00A6D172 /* FeedTableViewController.h */,
-				EBEE17CA1AC7A35D00A6D172 /* FeedTableViewController.m */,
 				EBEE17CC1AC7BB5400A6D172 /* ClassTableViewController.h */,
 				EBEE17CD1AC7BB5400A6D172 /* ClassTableViewController.m */,
-				EBEE17CF1AC7E0B500A6D172 /* InstructorClassTableViewController.h */,
-				EBEE17D01AC7E0B500A6D172 /* InstructorClassTableViewController.m */,
 				EBEE17D21AC7E19F00A6D172 /* InstructorFeedTableViewController.h */,
 				EBEE17D31AC7E19F00A6D172 /* InstructorFeedTableViewController.m */,
-				EBEE17D51AC7EB4900A6D172 /* InitialViewController.h */,
-				EBEE17D61AC7EB4900A6D172 /* InitialViewController.m */,
+				EBB3DFA31ACE1F77007BEDAD /* AddQuestionViewController.h */,
+				EBB3DFA41ACE1F77007BEDAD /* AddQuestionViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -395,13 +380,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBDF10E018E6104C0083F7F3 /* AppDelegate.m in Sources */,
-				EBDF10E318E6104C0083F7F3 /* FirstViewController.m in Sources */,
+				EBB3DFA51ACE1F77007BEDAD /* AddQuestionViewController.m in Sources */,
 				EBDF10DD18E6104C0083F7F3 /* main.m in Sources */,
-				EBEE17D71AC7EB4900A6D172 /* InitialViewController.m in Sources */,
-				EBEE17CB1AC7A35D00A6D172 /* FeedTableViewController.m in Sources */,
 				EBEE17CE1AC7BB5400A6D172 /* ClassTableViewController.m in Sources */,
 				EBEE17D41AC7E19F00A6D172 /* InstructorFeedTableViewController.m in Sources */,
-				EBEE17D11AC7E0B500A6D172 /* InstructorClassTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

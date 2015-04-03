@@ -19,13 +19,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    // Init the classId
     self.classId = [[NSString alloc] init];
     
-    // [Optional] Power your app with Local Datastore. For more info, go to
-    // https://parse.com/docs/ios_guide#localdatastore/iOS
     [Parse enableLocalDatastore];
     
-    // Initialize Parse.
+    // Initialize Parse. These credentials are given to you by Parse after setting up your project on their site.
     [Parse setApplicationId:@"KUa22JAyYoPW5ifZM9CVkHWJtcmzilE2Qexl9aZ3"
                   clientKey:@"iZWUhRSWiAVsUFcxWuvb3IsUJ531QMBSt7A5SX5p"];
     
